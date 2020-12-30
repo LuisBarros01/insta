@@ -1,0 +1,167 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+body {
+	width: 100%
+	min-height: 100vh;
+	background-color: rgb(243, 243, 243);
+	margin: 0; 
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.container-principal {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	width: 70%;
+	height: 100vh;
+}
+
+.container-img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+}
+
+.container-login {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 50%
+	min-height: 34rem;
+}
+
+.caixinha {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	background-color: #fff;
+	border: 1px solid lightgray;
+	width: 100%;
+	padding: 1.3rem 0;
+	margin-top: 0.5rem;
+}
+
+.caixinha:nth-child(1) {
+	min-height: 19rem;
+}
+
+.logo {
+	height: 3rem;
+}
+
+.foto-perfil {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.foto-perfil img {
+	height: 6rem;
+}
+
+.continue {
+	background-color: #0095f6;
+	color: #fff;
+	padding: 8px;
+	border-radius: 4px;
+}
+
+.continue:hover {
+	background-color: #0055ff;
+}
+
+.remover {
+	color: #0095f6;
+	margin-top: 1rem;
+}
+
+.remover:hover {
+	color: #0055ff;
+}
+
+.conta {
+	color: rgb(160, 160, 160);
+}
+
+.texto-azul {
+	color: #0095f6;
+}
+
+.texto-azul:hover {
+	color: #0055ff;
+	cursor: pointer;
+}
+
+.apps {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	padding: 1.3rem 0;
+}
+
+.download {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding: 1.5rem;
+}
+
+.baixar-apps {
+	height: 3rem;
+	width: 10rem;
+	background-size: cover;
+	margin-right: 2rem;
+}
+
+.baixar-apps:nth-child(1) {
+	background-image: url(../img/apple-button.png);
+}
+
+.baixar-apps:nth-child(2) {
+	background-image: url(../img/googleplay-button.png);
+}
+
+@media (max-width: 1024px) {
+	.container-principal {
+		width: 90%;
+	}
+}
+
+@media (max-width: 650px) {
+	body {
+		background-color: #fff;
+	}
+
+	.container-principal {
+		width: 90%;
+	}
+
+	.container-img {
+		display: none;
+	}
+
+	.container-login {
+		width: 100%;
+	}
+
+	.caixinha {
+		border: 1px solid transparent;
+	}
+}
